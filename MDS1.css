@@ -1,0 +1,276 @@
+/* Fichier CSS provenant originallement de https://lmdbt.fr//md2html/md2html_styleTC.css */
+md body {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 900px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+/* Style pour le titre principal */
+md h1 {
+    color: #003f5c; /* bleu foncÃ© */
+    position: relative;
+    font-size: 2.75rem;
+    text-align: center;
+}
+md h1::before {
+    content: "";
+    position: absolute;
+    bottom: -0.1em;
+    left: 0;
+    right: 0;
+    height: 0.05em;
+    background-color: #9eb6d7;
+}
+
+/* Style pour le titre secondaire */
+md h2 {
+    font-size: 2.25rem;
+    color: #2f4b7c;
+    position: relative;
+}
+md h2::before {
+    content: "";
+    position: absolute;
+    bottom: -0.1em;
+    left: 0;
+    right: 0;
+    height: 0.025em;
+    background-color: #a5b6c4;
+}
+
+md h3 {
+    font-size: 1.75rem;
+    color: #665191;
+}
+
+md h4 {
+    font-size: 1.5rem;
+    color: #665191;
+}
+
+md h5 {
+    font-size: 1.3rem;
+    color: #665191;
+}
+
+/* Style pour le paragraphe */
+md p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Style pour le texte en gras */
+md strong {
+color: #800000;
+}
+
+/* Style pour le texte en italique */
+md i {
+font-style: italic;
+color: darkblue;
+}
+
+/* Style pour les images */
+md img {
+    max-width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: auto;
+}
+
+md blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-left: 4px solid #ccc;
+    border-left: 4px solid #ccc;
+}
+
+/* Style pour le code en ligne */
+md code {
+    font-family: "Courier New", monospace;
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+
+/* Style pour le code en bloc */
+md pre {
+    font-family: "Courier New", monospace;
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+/* Style pour les liens */
+md a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Style pour les liens visitÃ©s */
+md a:visited {
+    color: #6610f2;
+}
+
+/* Style pour les titres de liens */
+md a:hover, a:focus {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Style pour les listes */
+md ul, ol {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+md table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+md th, md td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+md th {
+    background-color: #f2f2f2;
+}
+
+md tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+md tr:hover {
+    background-color: #ddd;
+}
+
+/* Style pour les Ã©lÃ©ments <details> */
+md details {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Style pour les Ã©lÃ©ments <summary> */
+md summary {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.2rem 0;
+    list-style: none;
+}
+
+/* Ajoute une flÃ¨che Ã  cÃ´tÃ© de <summary> lorsque <details> est ouvert */
+md details[open] summary::before {
+    content: 'â–¾';
+    padding-right: 10px;
+}
+
+/* Ajoute une flÃ¨che Ã  cÃ´tÃ© de <summary> lorsque <details> est fermÃ© */
+md details summary::before {
+    content: 'â–¸';
+    padding-right: 10px;
+}
+
+md .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+}
+
+md .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+md .div_nav {
+    text-align: right; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+}
+
+md .img_nav {
+    width: 5em; 
+    text-decoration: none;
+}
+
+md .ftw_nav {
+    font-size: 2em;
+    padding-left: 2px;
+}
+
+
+
+/* Media query pour les tÃ©lÃ©phones */
+@media only screen and (max-width: 600px) {
+    md body {
+        padding: 0.5rem;
+    }
+    
+    md h1 {
+        font-size: 2rem;
+    }
+    
+    md h2 {
+        font-size: 1.5rem;
+    }
+    
+    md h3 {
+        font-size: 1.37rem;
+    }
+
+    md h4 {
+        font-size: 1.23rem;
+    }
+
+    md h5 {
+        font-size: 1.10rem;
+    }
+
+    md h6 {
+        font-size: 1.05rem;
+    }
+
+    md p {
+        font-size: 1rem;
+    }
+    
+    md ul, ol {
+        font-size: 1rem; /* Nouvelle taille de police pour les listes sur les tÃ©lÃ©phones */
+    }
+
+    md img {
+        max-width: 100%;
+    }
+	
+	md .img_nav {
+    width: 2.5em; 
+    text-decoration: none;
+}
+
+	md .ftw_nav {
+		font-size: 1em;
+		padding-left: 2px;
+	}
+}
