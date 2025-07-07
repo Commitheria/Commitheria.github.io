@@ -20,3 +20,5 @@ Advertising is allowed in the following frameworks:
 - Does not redirect to malicious content or violate EU laws (June 25, 2025).
 ### Miscellaneous
 No NSFW.
+## Inscription
+Ready to be a part of US? Let's [sign in](https://discord.gg/3Z65VPsbbH) !
